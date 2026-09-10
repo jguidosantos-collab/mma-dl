@@ -53,3 +53,6 @@ class PromotionScreenUI {
         const requirements = [40, 55, 70, 78, 85];
         const currentIndex = stages.indexOf(player.careerLevel);
         return currentIndex 
+        return requirements[Math.min(currentIndex + 1, requirements.length - 1)];
+    }
+}
