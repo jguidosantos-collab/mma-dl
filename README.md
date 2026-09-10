@@ -10,6 +10,8 @@ Uma simulação de carreira em MMA com sistema de dinastia, treinamento, combate
 4. Crie uma dinastia com seus filhos
 
 ## 📁 Estrutura do Projeto
+mma-dl/├── index.html├── css/│   └── style.css├── js/│   ├── 01. ENGINE/│   ├── 02. PLAYER/│   ├── 03. TRAINING/│   ├── 04. MMA/│   ├── 05. CAREER/│   ├── 06. PROMOTIONS/│   ├── 07. BUSINESS/│   ├── 08. MEDIA/│   ├── 09. WORLD/│   ├── 10. LIFE/│   ├── 11. UI/│   ├── main.js│   └── save.js├── .gitignore└── README.md
+
 ## ✨ Features
 
 - ✅ Criação de lutador customizável
