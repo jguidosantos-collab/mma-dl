@@ -7,7 +7,6 @@ class GameConfig {
         window.TimeSystem = new Time();
         window.CalendarSystem = new Calendar();
         window.EventSystem = EventSystem;
-        window.RNG = RNG;
         window.GameEngine = new Engine();
         window.FightersDatabase = new Fighters();
         window.ManagersSystem = new Managers();
