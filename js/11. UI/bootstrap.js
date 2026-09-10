@@ -6,10 +6,11 @@ class Bootstrap {
         FightersDatabase.generateDefaultFighters();
         ManagersSystem.generateManagers();
         RankingsSystem.updateRankings('Elite');
+        RankingsSystem.updateRankings('Internacional');
+        RankingsSystem.updateRankings('Nacional');
+        RankingsSystem.updateRankings('Regional');
+        RankingsSystem.updateRankings('Amateur');
 
-        UI.init();
-        UIScreens.showMainMenu();
-
-        console.log('✅ Game initialized!');
+        console.log('✅ Game initialized successfully!');
     }
 }
