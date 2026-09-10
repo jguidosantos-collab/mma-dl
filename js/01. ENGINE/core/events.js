@@ -1,4 +1,4 @@
-class EventSystem {
+class EventSystemCore {
     constructor() {
         this.listeners = {};
     }
@@ -7,20 +7,24 @@ class EventSystem {
         if (!this.listeners[event]) {
             this.listeners[event] = [];
         }
+
         this.listeners[event].push(callback);
     }
 
     off(event, callback) {
         if (this.listeners[event]) {
-            this.listeners[event] = this.listeners[event].filter(cb => cb !== callback);
+            this.listeners[event] =
+                this.listeners[event].filter(cb => cb !== callback);
         }
     }
 
     emit(event, data) {
         if (this.listeners[event]) {
-            this.listeners[event].forEach(callback => callback(data));
+            this.listeners[event].forEach(callback => {
+                callback(data);
+            });
         }
     }
 }
 
-const EventSystem = new EventSystem();
+const EventSystem = new EventSystemCore();
